@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Install pyenv if not already installed
+if [ ! -d "$HOME/.pyenv" ]; then
+  echo "Installing pyenv..."
+  curl https://pyenv.run | bash
+else
+  echo "pyenv already installed."
+fi
+
+
