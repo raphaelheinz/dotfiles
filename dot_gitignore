@@ -1,0 +1,49 @@
+# === OS SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+$RECYCLE.BIN/
+.AppleDouble
+.Trashes
+.LSOverride
+.localized
+__MACOSX/
+
+# === EDITOR / IDE FILES ===
+
+# VS Code
+.vscode/
+.code-workspace
+
+# JetBrains IDEs (IntelliJ, PyCharm, etc.)
+.idea/
+*.iml
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+.#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse
+.project
+.metadata/
+.classpath
+.settings/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
