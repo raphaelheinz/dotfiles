@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Install Starship
+if ! command -v starship &> /dev/null; then
+  echo "Installing Starship..."
+  curl -sS https://starship.rs/install.sh | sh -s -- -y
+fi
+

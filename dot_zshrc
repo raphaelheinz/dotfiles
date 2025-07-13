@@ -73,13 +73,13 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	colored-man-pages
-	zsh-autosuggestions
-	zsh-history-substring-search
-	zsh-syntax-highlighting
-	colorize
-        web-search
+    git
+    colored-man-pages
+    zsh-autosuggestions
+    zsh-history-substring-search
+    zsh-syntax-highlighting
+    colorize
+    web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -120,5 +120,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Starship configuration
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+
+# Zsh plugin
+source ${(q-)ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 

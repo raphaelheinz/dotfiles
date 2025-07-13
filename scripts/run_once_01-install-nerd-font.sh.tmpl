@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -d "$HOME/.local/share/fonts/FiraCodeNerdFont" ]; then
+    echo "Nerd Font already installed"
+    exit 0
+fi
+
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
+unzip FiraCode.zip -d FiraCodeNerdFont
+rm FiraCode.zip
+
+fc-cache -fv
+
+
