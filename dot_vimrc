@@ -1,0 +1,50 @@
+" === Basic Settings ===
+
+" Enable syntax highlighting
+syntax on
+
+" Enable line numbers
+set number
+set encoding=utf-8
+set ruler
+set showmode
+set laststatus=2
+set scrolloff=5
+
+" Highlight current line
+" set cursorline
+
+" Enable smart indentation
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Enable line wrapping (soft wrap)
+set wrap
+
+" Show matching brackets
+set showmatch
+
+" Enable incremental search
+set incsearch
+
+" Highlight search results
+set hlsearch
+
+" Ignore case in search unless uppercase letters used
+set ignorecase
+set smartcase
+
+" Enable syntax-based folding
+set foldmethod=syntax
+set foldlevelstart=99   " Open all folds by default
+
+" === Appearance ===
+" colorscheme desert
+colorscheme murphy
+
+" === Filetype Plugins ===
+filetype plugin indent on
+
